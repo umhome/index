@@ -22,35 +22,36 @@ a:visited { color: aliceblue; } /* 已访问的链接 */
 a:hover { color: aliceblue; opacity: 0.3; transform: scale(1.05);} /* 鼠标悬停时的链接 */
 a:active { color: aliceblue; } /* 选定的链接 */
 li{list-style:none}/* li标签去掉点 */
-	
+
+.zhengye{
+display: flex; /* 设置为Flex容器 */
+justify-content: space-between; /* 或者使用 'flex-start', 'flex-end', 'center' 根据需要调整 */
+/* 如果需要，可以设置容器的宽度和高度 */
+}
+
 .menu{
-margin: auto;
+margin-top: 1000px;
 gap: 20px;/* 间距 */
-height: 100px;/* 高度 */
-display: flex;/* 使用Flexbox布局 */
-justify-content: center;/* 水平居中 */
-align-items: center;/* 垂直居中 */
-background: rgba(0,0,0,1.00)
+height: 100%;/* 高度 */
+width: 150px;
+background:rgba(0,0,0,0.9);
+text-align: center;
 }
 
 a.menufont{
-font-size: 20px;
+font-size: 15px;
 }
 
 .link{
-margin: auto;
+margin-top: 1000px;
+width: 500px;
+height: 100%;
 text-align: center;
+background:rgba(0,0,0,0.7);
 }
 
 a.linkfont{
 font-size: 12px;
-}
-
-.img {
-width: 300px; /* Adjust as needed */
-height: 187px;
-cursor: pointer;
-transition: transform 0.2s;
 }
 
 #overlay {
@@ -75,8 +76,10 @@ max-height: 90%;
 }
 
 .img{
-margin: auto;
-width: auto;
+margin-top: 1000px;
+width: 1217px;
+height: 100%;
+background:rgba(0,0,0,0.5);
 }
 
 .imgxxx img:hover {
@@ -85,7 +88,7 @@ transform: scale(1.05);
 
 .zoomable-image {
 width: 300px;
-height: 187px;
+height: 181px;
 cursor: pointer;
 transition: transform 0.2s;
 }
@@ -94,64 +97,20 @@ transition: transform 0.2s;
 </head>
 
 <body>
-
+<div class="zhengye">
 <div id="menu" class="menu">
-<a class="menufont" href="http://thzu.cc" target="_blank" style="text-decoration:none">桃花族</a>
-<a class="menufont" href="http://hsck.net" target="_blank" style="text-decoration:none">黄色仓库</a>
-<a class="menufont" href="http://集芳阁搜索.com" target="_blank" style="text-decoration:none">集芳阁搜索</a>
-<a class="menufont" href="https://www.55mm3.com" target="_blank" style="text-decoration:none">光棍影院</a>
-<a class="menufont" href="https://www.yuleba.org/b/10-0.html" target="_blank" style="text-decoration:none">娱乐吧</a>
-<a class="menufont" href="https://www.tu9663.cc" target="_blank" style="text-decoration:none">高清套图</a>
-<a class="menufont" href="https://www.ku138.cc" target="_blank" style="text-decoration:none">标清套图</a>
-<a class="menufont" href="https://www.ymxzj.com" target="_blank" style="text-decoration:none">预览套图</a>
-<a class="menufont" href="https://btcherries.xyz" target="_blank" style="text-decoration:none">雨花阁</a>
-<a class="menufont" href="https://github.com/yuhuage/dizhi" target="_blank" style="text-decoration:none">发布页</a>
-<a class="menufont" href="https://aavindex.com/ja" target="_blank" style="text-decoration:none">番号本</a>
-<a class="menufont" href="https://www.cililianjie.co" target="_blank" style="text-decoration:none">磁力链接</a>
-</div>
-
-<div class="img" id="img">
-<div class="imgxxx" id="imgxxx">
-<img src="https://spic.hotoss.com/dmm/mono/movie/adult/ipx934/ipx934pl.jpg"  alt="" class="zoomable-image"/>
-<img src="https://spic.hotoss.com/dmm/mono/movie/adult/ipzz014/ipzz014pl.jpg"  alt="" class="zoomable-image"/>
-<img src="https://spic.hotoss.com/dmm/mono/movie/adult/ipzz132/ipzz132pl.jpg"  alt="" class="zoomable-image"/>
-<img src="https://spic.hotoss.com/dmm/mono/movie/adult/ipzz178/ipzz178pl.jpg"  alt="" class="zoomable-image"/>
-<img src="https://spic.hotoss.com/dmm/mono/movie/adult/tkipzz293/tkipzz293pl.jpg"  alt="" class="zoomable-image"/>
-<img src="https://images.dalicdn.com/censored/pic/2020/ssni00677pl.jpg"  alt="" class="zoomable-image"/>
-
-<img src="https://spic.hotoss.com/dmm/mono/movie/adult/ssis529/ssis529pl.jpg"  alt="" class="zoomable-image"/>
-<img src="https://spic.hotoss.com/dmm/mono/movie/adult/k9ssis440/k9ssis440pl.jpg"  alt="" class="zoomable-image"/>
-<img src="https://spic.hotoss.com/dmm/mono/movie/adult/ssis136/ssis136pl.jpg"  alt="" class="zoomable-image"/>
-<img src="https://spic.hotoss.com/dmm/mono/movie/adult/bacj005so/bacj005sopl.jpg"  alt="" class="zoomable-image"/>
-<img src="https://spic.hotoss.com/dmm/mono/movie/adult/cawd259/cawd259pl.jpg"  alt="" class="zoomable-image"/>
-<img src="https://spic.hotoss.com/dmm/mono/movie/adult/cawd524/cawd524pl.jpg"  alt="" class="zoomable-image"/>
-<img src="https://spic.hotoss.com/dmm/mono/movie/adult/41hodv21402/41hodv21402pl.jpg"  alt="" class="zoomable-image"/>
-<img src="https://spic.hotoss.com/dmm/mono/movie/adult/ipz721/ipz721pl.jpg"  alt="" class="zoomable-image"/>
-<img src="https://spic.hotoss.com/dmm/mono/movie/adult/h_1240milk098/h_1240milk098pl.jpg"  alt="" class="zoomable-image"/>
-
-<img src="https://spic.hotoss.com/dmm/digital/video/1akdl00262/1akdl00262pl.jpg"  alt="" class="zoomable-image"/>
-<img src="https://spic.hotoss.com/dmm/mono/movie/adult/h_254cand049/h_254cand049pl.jpg"  alt="" class="zoomable-image"/>
-<img src="https://spic.hotoss.com/dmm/mono/movie/adult/1fsdss828/1fsdss828pl.jpg"  alt="" class="zoomable-image"/>
-<img src="https://spic.hotoss.com/dmm/mono/movie/adult/hsoda029/hsoda029pl.jpg"  alt="" class="zoomable-image"/>
-<img src="https://spic.hotoss.com/dmm/mono/movie/adult/ipx283/ipx283pl.jpg"  alt="" class="zoomable-image"/>
-<img src="https://spic.hotoss.com/dmm/mono/movie/adult/ipzz099/ipzz099pl.jpg"  alt="" class="zoomable-image"/>
-<img src="https://spic.hotoss.com/dmm/mono/movie/adult/h_1712kbr006/h_1712kbr006pl.jpg"  alt="" class="zoomable-image"/>
-<img src="https://spic.hotoss.com/dmm/mono/movie/adult/madv562/madv562pl.jpg"  alt="" class="zoomable-image"/>
-<img src="https://spic.hotoss.com/dmm/digital/video/mdbk00331/mdbk00331pl.jpg"  alt="" class="zoomable-image"/>
-<img src="https://spic.hotoss.com/dmm/mono/movie/adult/midd994/midd994pl.jpg"  alt="" class="zoomable-image"/>
-<img src="https://spic.hotoss.com/dmm/mono/movie/adult/myab005dod/myab005dodpl.jpg"  alt="" class="zoomable-image"/>
-<img src="https://spic.hotoss.com/dmm/mono/movie/adult/royd177/royd177pl.jpg"  alt="" class="zoomable-image"/>
-<img src="https://spic.hotoss.com/mgs/images/gabutto/791skgc/002/pb_e_791skgc-002.jpg"  alt="" class="zoomable-image"/>
-<img src="https://spic.hotoss.com/mgs/images/sodcreate/107stars/854/pb_e_107stars-854.jpg"  alt="" class="zoomable-image"/>
-
-<img src="https://spic.hotoss.com/mgs/images/sodcreate/1073dsvr/1058/cap_e_12_1073dsvr-1058.jpg"  alt="" class="zoomable-image"/>
-<img src="https://spic.hotoss.com/dmm/digital/video/13dsvr01584/13dsvr01584pl.jpg"  alt="" class="zoomable-image"/>
-<img src="https://spic.hotoss.com/dmm/digital/video/13dsvr01599/13dsvr01599pl.jpg"  alt="" class="zoomable-image"/>
-<img src="https://spic.hotoss.com/dmm/digital/video/ipvr00287/ipvr00287pl.jpg"  alt="" class="zoomable-image"/>
-<img src="https://spic.hotoss.com/dmm/digital/video/savr00369/savr00369pl.jpg"  alt="" class="zoomable-image"/>
-<img src="https://spic.hotoss.com/dmm/digital/video/savr00383/savr00383pl.jpg"  alt="" class="zoomable-image"/>
-<img src="https://spic.hotoss.com/dmm/digital/video/savr00459/savr00459pl.jpg"  alt="" class="zoomable-image"/>
-<img src="https://spic.hotoss.com/dmm/digital/video/vrkm01239/vrkm01239pl.jpg"  alt="" class="zoomable-image"/>
+<li><a class="menufont" href="http://thzu.cc" target="_blank" style="text-decoration:none">桃花族</a></li>
+<li><a class="menufont" href="http://hsck.net" target="_blank" style="text-decoration:none">黄色仓库</a></li>
+<li><a class="menufont" href="http://集芳阁搜索.com" target="_blank" style="text-decoration:none">集芳阁搜索</a></li>
+<li><a class="menufont" href="https://www.55mm3.com" target="_blank" style="text-decoration:none">光棍影院</a></li>
+<li><a class="menufont" href="https://www.yuleba.org/b/10-0.html" target="_blank" style="text-decoration:none">娱乐吧</a></li>
+<li><a class="menufont" href="https://www.tu9663.cc" target="_blank" style="text-decoration:none">高清套图</a></li>
+<li><a class="menufont" href="https://www.ku138.cc" target="_blank" style="text-decoration:none">标清套图</a></li>
+<li><a class="menufont" href="https://www.ymxzj.com" target="_blank" style="text-decoration:none">预览套图</a></li>
+<li><a class="menufont" href="https://btcherries.xyz" target="_blank" style="text-decoration:none">雨花阁</a></li>
+<li><a class="menufont" href="https://github.com/yuhuage/dizhi" target="_blank" style="text-decoration:none">发布页</a></li>
+<li><a class="menufont" href="https://aavindex.com/ja" target="_blank" style="text-decoration:none">番号本</a></li>
+<li><a class="menufont" href="https://www.cililianjie.co" target="_blank" style="text-decoration:none">磁力链接</a></li>
 </div>
 
 <div class="link" id="link">
@@ -175,6 +134,60 @@ transition: transform 0.2s;
 <a class="linkfont" target="_blank" href=""><p>https://www.tu9663.cc/y/list_1_71.html</p></a>
 </div>
 
+<div class="img" id="img">
+<div class="imgxxx" id="imgxxx">
+
+	
+
+<img src="https://spic.hotoss.com/dmm/mono/movie/adult/ipx934/ipx934pl.jpg"  alt="" class="zoomable-image"/>
+<img src="https://spic.hotoss.com/dmm/mono/movie/adult/ipzz014/ipzz014pl.jpg"  alt="" class="zoomable-image"/>
+<img src="https://spic.hotoss.com/dmm/mono/movie/adult/ipzz132/ipzz132pl.jpg"  alt="" class="zoomable-image"/>
+<img src="https://spic.hotoss.com/dmm/mono/movie/adult/ipzz178/ipzz178pl.jpg"  alt="" class="zoomable-image"/>
+<img src="https://spic.hotoss.com/dmm/mono/movie/adult/tkipzz293/tkipzz293pl.jpg"  alt="" class="zoomable-image"/>
+<img src="https://images.dalicdn.com/censored/pic/2020/ssni00677pl.jpg"  alt="" class="zoomable-image"/>
+
+
+
+<img src="https://spic.hotoss.com/dmm/mono/movie/adult/ssis529/ssis529pl.jpg"  alt="" class="zoomable-image"/>
+<img src="https://spic.hotoss.com/dmm/mono/movie/adult/k9ssis440/k9ssis440pl.jpg"  alt="" class="zoomable-image"/>
+<img src="https://spic.hotoss.com/dmm/mono/movie/adult/ssis136/ssis136pl.jpg"  alt="" class="zoomable-image"/>
+<img src="https://spic.hotoss.com/dmm/mono/movie/adult/bacj005so/bacj005sopl.jpg"  alt="" class="zoomable-image"/>
+<img src="https://spic.hotoss.com/dmm/mono/movie/adult/cawd259/cawd259pl.jpg"  alt="" class="zoomable-image"/>
+<img src="https://spic.hotoss.com/dmm/mono/movie/adult/cawd524/cawd524pl.jpg"  alt="" class="zoomable-image"/>
+<img src="https://spic.hotoss.com/dmm/mono/movie/adult/41hodv21402/41hodv21402pl.jpg"  alt="" class="zoomable-image"/>
+<img src="https://spic.hotoss.com/dmm/mono/movie/adult/ipz721/ipz721pl.jpg"  alt="" class="zoomable-image"/>
+<img src="https://spic.hotoss.com/dmm/mono/movie/adult/h_1240milk098/h_1240milk098pl.jpg"  alt="" class="zoomable-image"/>
+
+	
+
+<img src="https://spic.hotoss.com/dmm/digital/video/1akdl00262/1akdl00262pl.jpg"  alt="" class="zoomable-image"/>
+<img src="https://spic.hotoss.com/dmm/mono/movie/adult/h_254cand049/h_254cand049pl.jpg"  alt="" class="zoomable-image"/>
+<img src="https://spic.hotoss.com/dmm/mono/movie/adult/1fsdss828/1fsdss828pl.jpg"  alt="" class="zoomable-image"/>
+<img src="https://spic.hotoss.com/dmm/mono/movie/adult/hsoda029/hsoda029pl.jpg"  alt="" class="zoomable-image"/>
+<img src="https://spic.hotoss.com/dmm/mono/movie/adult/ipx283/ipx283pl.jpg"  alt="" class="zoomable-image"/>
+<img src="https://spic.hotoss.com/dmm/mono/movie/adult/ipzz099/ipzz099pl.jpg"  alt="" class="zoomable-image"/>
+<img src="https://spic.hotoss.com/dmm/mono/movie/adult/h_1712kbr006/h_1712kbr006pl.jpg"  alt="" class="zoomable-image"/>
+<img src="https://spic.hotoss.com/dmm/mono/movie/adult/madv562/madv562pl.jpg"  alt="" class="zoomable-image"/>
+<img src="https://spic.hotoss.com/dmm/digital/video/mdbk00331/mdbk00331pl.jpg"  alt="" class="zoomable-image"/>
+<img src="https://spic.hotoss.com/dmm/mono/movie/adult/midd994/midd994pl.jpg"  alt="" class="zoomable-image"/>
+<img src="https://spic.hotoss.com/dmm/mono/movie/adult/myab005dod/myab005dodpl.jpg"  alt="" class="zoomable-image"/>
+<img src="https://spic.hotoss.com/dmm/mono/movie/adult/royd177/royd177pl.jpg"  alt="" class="zoomable-image"/>
+<img src="https://spic.hotoss.com/mgs/images/gabutto/791skgc/002/pb_e_791skgc-002.jpg"  alt="" class="zoomable-image"/>
+<img src="https://spic.hotoss.com/mgs/images/sodcreate/107stars/854/pb_e_107stars-854.jpg"  alt="" class="zoomable-image"/>
+
+
+
+<img src="https://spic.hotoss.com/mgs/images/sodcreate/1073dsvr/1058/cap_e_12_1073dsvr-1058.jpg"  alt="" class="zoomable-image"/>
+<img src="https://spic.hotoss.com/dmm/digital/video/13dsvr01584/13dsvr01584pl.jpg"  alt="" class="zoomable-image"/>
+<img src="https://spic.hotoss.com/dmm/digital/video/13dsvr01599/13dsvr01599pl.jpg"  alt="" class="zoomable-image"/>
+<img src="https://spic.hotoss.com/dmm/digital/video/ipvr00287/ipvr00287pl.jpg"  alt="" class="zoomable-image"/>
+<img src="https://spic.hotoss.com/dmm/digital/video/savr00369/savr00369pl.jpg"  alt="" class="zoomable-image"/>
+<img src="https://spic.hotoss.com/dmm/digital/video/savr00383/savr00383pl.jpg"  alt="" class="zoomable-image"/>
+<img src="https://spic.hotoss.com/dmm/digital/video/savr00459/savr00459pl.jpg"  alt="" class="zoomable-image"/>
+<img src="https://spic.hotoss.com/dmm/digital/video/vrkm01239/vrkm01239pl.jpg"  alt="" class="zoomable-image"/>
+</div>
+
+</div>
 </div>
 <div id="overlay" class="hidden">
 <img id="overlay-image" src="" alt="Zoomed Image">
