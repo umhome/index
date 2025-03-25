@@ -49,6 +49,7 @@ form {
         /* 容器样式 */
         .box {
             display: flex;
+			justify-content: center;
             flex-wrap: wrap;
             gap: 5px; /* 元素间距 */
             padding: 5px;
@@ -59,7 +60,7 @@ form {
 
         /* 单个项目样式 */
         .item {
-            width: 200px; /* 固定宽度 */
+            width: 250px; /* 固定宽度 */
             background-color:rgba(0,0,0,0.25);
             border-radius: 8px;
             overflow: hidden;
@@ -69,7 +70,7 @@ form {
         /* 图片容器 */
         .item-img {
             width: 100%;
-            height: 120px;
+            height: 150px;
             overflow: hidden;
         }
 
@@ -82,12 +83,12 @@ form {
 
         /* 文字容器 */
         .item-text {
-            padding: 15px;
+            padding: 5px;
             text-align:left
         }
 
         .item-text h3 {
-            margin-bottom: 8px;
+            margin-bottom: 5px;
             color: #A2A2A2;
             font-size: 16px;
         }
@@ -123,11 +124,18 @@ li{list-style:none}/* li标签去掉点 */
             justify-content: center; /* 水平居中 */
             margin: 20px auto;       /* 垂直间距 + 水平自动 */
             padding: 10px;
+        }
+.分类 {
+            display: flex;
+            justify-content: center; /* 水平居中 */
+            margin: 20px auto;       /* 垂直间距 + 水平自动 */
+            padding: 10px;
             background-color: rgba(0,0,0,0.5); /* 可选：背景色 */
         }
 </style>
 </head>
 <body>
+<div style="margin-top: 720px;"></div>
 <div class="search-container" style="
     display: flex;
     justify-content: center;
@@ -167,9 +175,13 @@ li{list-style:none}/* li标签去掉点 */
 <a class="menufont" href="https://www.cililian.sbs" target="_blank" style="text-decoration:none">磁力链接</a>
 </div>
 <div class="关键词">
-<p style="color: white">一ノ瀬アメリ丘咲エミリ霧島レオナ桃乃木かな河北彩花橋本ありな大桥未久桃谷エリカ冬愛ことね野々浦暖楪カレン彩月七緒鷲尾めい安齋らら南乃そら神田るな</p>
+<p>一ノ瀬アメリ丘咲エミリ霧島レオナ桃乃木かな河北彩花橋本ありな大桥未久桃谷エリカ冬愛ことね野々浦暖楪カレン彩月七緒鷲尾めい安齋らら南乃そら神田るな</p>
+</div>
+	    <div class="分类">
+<p style="color: white">精选</p>
 </div>
 <div class="box">
+
         <!-- 示例项目 - 重复这个结构即可 -->
         <div class="item">
             <div class="item-img">
@@ -224,6 +236,10 @@ li{list-style:none}/* li标签去掉点 */
 
     <!-- 可以继续添加更多项目 -->
   </div>
+
+<div class="分类">
+<p style="color: white">第一人称主观视角</p>
+</div>
 <div class="box">
   <!-- 示例项目 - 重复这个结构即可 -->
   <div class="item">
@@ -297,6 +313,9 @@ li{list-style:none}/* li标签去掉点 */
     </div>
   </div>
   <!-- 可以继续添加更多项目 -->
+</div>
+<div class="分类">
+<p style="color: white">眼镜娘</p>
 </div>
 <div class="box">
   <!-- 示例项目 - 重复这个结构即可 -->
@@ -413,6 +432,9 @@ li{list-style:none}/* li标签去掉点 */
     </div>
   </div>
   <!-- 可以继续添加更多项目 -->
+</div>
+<div class="分类">
+<p style="color: white">3D</p>
 </div>
 <div class="box">
   <!-- 示例项目 - 重复这个结构即可 -->
