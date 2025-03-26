@@ -1,69 +1,154 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UM</title>
+    <title>双容器布局</title>
     <style>
-		body {background-image: url(https://plan-use-card.xofulitu-001.com/upload/art/20240109/cc4580712437dfc05b1ab.jpg); background-size: 100% auto;background-attachment: fixed;}
-        * {
+        body {
             margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-a:link { color: black ; } /* 未访问的链接 */
-a:visited { color: black; } /* 已访问的链接 */
-a:hover { color: black; transform: scale(1.05);} /* 鼠标悬停时的链接 */
-a:active { color: black; } /* 选定的链接 */
-li{list-style:none}/* li标签去掉点 */
-.menu-container {
+            min-height: 100vh;
             display: flex;
-            justify-content: center; /* 水平居中 */
-            margin: 20px auto;       /* 垂直间距 + 水平自动 */
-            padding: 10px;
-            max-width: 950px;      /* 可选：限制容器宽度 */
-            background-color: rgba(255,255,255,0.3); /* 可选：背景色 */
-            border-radius: 5px;      /* 可选：圆角 */
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            padding: 40px 20px;
+			background-image: url(https://plan-use-card.xofulitu-001.com/upload/art/20240109/cc4580712437dfc05b1ab.jpg);
+			background-size: 100% auto;
+			background-attachment: fixed;
         }
-.menufont {
-            display: inline-block;  /* 或直接使用 flex 容器的 gap 属性 */
-            margin: 0 15px;         /* 左右间距 */
-            color: #333;            /* 文字颜色 */
-            font-family: Arial, sans-serif; 
-            white-space: nowrap;    /* 防止文字换行 */
-        }
-.关键词 {
+
+        .container {
+            width: 90vw;
+            padding: 25px;
             display: flex;
-            justify-content: center; /* 水平居中 */
-            margin: 20px auto;       /* 垂直间距 + 水平自动 */
-            padding: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
         }
-.分类 {
+		.container2 {
+            padding: 0px;
+            border-radius: 12px;
+            background: rgba(0,0,0,0.50);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
             display: flex;
-            justify-content: center; /* 水平居中 */
-            margin: 20px auto;       /* 垂直间距 + 水平自动 */
-            padding: 10px;
-            background-color: rgba(0,0,0,0.5); /* 可选：背景色 */
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 5px;
         }
-</style>
+
+        /* 链接容器 */
+        .link-box a {
+            color: #fff;
+            text-decoration: none;
+            padding: 12px 28px;
+            border-radius: 25px;
+            background: #444;
+            transition: transform 0.2s ease;
+        }
+
+        .link-box a:hover {
+            background: #007bff;
+            transform: scale(1.05);
+        }
+
+        /* 段落容器 */
+        .text-box p {
+            margin: 0;
+            padding: 10px 24px;
+            color: #fff;
+            border-radius: 8px;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                gap: 20px;
+                padding: 20px 10px;
+            }
+            
+            .container {
+                width: 95vw;
+                padding: 15px;
+                gap: 12px;
+            }
+            
+            .link-box a {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+            
+            .text-box p {
+                padding: 8px 18px;
+                font-size: 14px;
+            }
+        }
+    </style>
 </head>
 <body>
-<div style="margin-top: 500px;"></div>
-<div class="menu-container">
-<a class="menufont" href="http://958hsck.com/vodtype/2.html" target="_blank" style="text-decoration:none">黄色仓库</a>
-<a class="menufont" href="https://www.55mm3.com" target="_blank" style="text-decoration:none">光棍影院</a>
-<a class="menufont" href="https://cn.oupomov.cc/" target="_blank" style="text-decoration:none">欧珀视频</a>
-<a class="menufont" href="https://www.aavindex.com/ja" target="_blank" style="text-decoration:none">番号预览</a>
-<a class="menufont" href="https://juemm.cc/zz" target="_blank" style="text-decoration:none">跳转中</a>
-<a class="menufont" href="https://www.csmen105.cc" target="_blank" style="text-decoration:none">传送门</a>
-<a class="menufont" href="https://www.tu99663.cc" target="_blank" style="text-decoration:none">高清套图</a>
-<a class="menufont" href="https://plan-use-card.xofulitu-001.com/xoxo" target="_blank" style="text-decoration:none">福利图</a>
-<a class="menufont" href="https://0cili.nl" target="_blank" style="text-decoration:none">无极磁链</a>
-<a class="menufont" href="https://www.cililian.sbs" target="_blank" style="text-decoration:none">磁力链接</a>
-<a class="menufont" href="https://umhome.github.io/pic001/" target="_blank" style="text-decoration:none">精选</a>
-</div>
-<div class="关键词">
-<p>一ノ瀬アメリ丘咲エミリ霧島レオナ桃乃木かな河北彩花橋本ありな大桥未久桃谷エリカ冬愛ことね野々浦暖楪カレン彩月七緒鷲尾めい安齋らら南乃そら神田るな</p>
-</div>
+    <!-- 链接容器 -->
+    <div class="container link-box">
+        <a href="http://958hsck.com/vodtype/2.html">黄色仓库</a>
+        <a href="https://www.55mm3.com">光棍影院</a>
+        <a href="https://cn.oupomov.cc">欧珀视频</a>
+        <a href="https://www.aavindex.com/ja">番号预览</a>
+        <a href="https://juemm.cc/zz">跳转中</a>
+		<a href="https://www.csmen105.cc">传送门</a>
+		<a href="https://www.tu99663.cc">高清套图</a>
+		<a href="https://plan-use-card.xofulitu-001.com/xoxo">福利图</a>
+		<a href="https://0cili.nl">无极磁链</a>
+		<a href="https://www.cililian.sbs">磁力链接</a>
+		<a href="https://umhome.github.io/pic001">精选</a>
+    </div>
+
+    <!-- 段落容器 -->
+    <div class="container2 text-box">
+        <p>一ノ瀬アメリ</p>
+        <p>丘咲エミリ</p>
+        <p>霧島レオナ</p>
+        <p>桃乃木かな</p>
+        <p>河北彩花</p>
+		<p>橋本ありな</p>
+        <p>大桥未久</p>
+        <p>桃谷エリカ</p>
+		<p>明里紬</p>
+		<p>森沢かな</p>
+		<p>希崎ジェシカ</p>
+		<p>希志あいの</p>
+		<p>小那海あや</p>
+		<p>羽月希</p>
+        <p>冬愛ことね</p>
+        <p>野々浦暖</p>
+		<p>楪カレン</p>
+        <p>彩月七緒</p>
+        <p>鷲尾めい</p>
+        <p>安齋らら</p>
+        <p>南乃そら</p>
+		<p>神田るな</p>
+    </div>
+	<!-- 段落容器 -->
+    <div class="container2 text-box">
+        <p>1Pondo</p>
+        <p>Heyzo</p>
+        <p>Tokyo Hot</p>
+		<p>Carib</p>
+        <p>FC2</p>
+		<p>CWPBD</p>
+		<p>SMBD</p>
+		<p>Pacopacomama</p>
+    </div>
+		<!-- 段落容器 -->
+    <div class="container2 text-box">
+        <p>PRED</p>
+		<p>IPZZ</p>
+		<p>IPX</p>
+		<p>ABF</p>
+		<p>START</p>
+		<p>SNIS</p>
+		<p>JUR</p>
+		<p>ABP</p>
+		<p>MXGS</p>
+		<p>EKDV</p>
+    </div>
 </body>
 </html>
