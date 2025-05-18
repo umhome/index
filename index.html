@@ -14,13 +14,6 @@
 		align-items: center;
 		background-position: 50% 50%;
 		background-repeat: no-repeat; 
-			/* 
-            background: 
-                radial-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
-                #1a1a1a;
-            background-size: 20px 20px;
-            gap: 40px;
-			 */
         }
 
         .box {
@@ -51,70 +44,14 @@
 
         /* 第二、三个Box */
         .box2, .box3 {
-            /* background-color: rgba(255,255,255,0.3); */
             border-radius: 0px;
-			color: white;
+	    color: white;
         }
         .box2 p, .box3 p {
             display: inline-flex;
             padding: 0px 6px;
             white-space: nowrap;
             margin: 0px;
-        }
-
-        /* 第四个Box */
-        .box4 {
-            position: relative;
-        }
-        .box4 p {
-            display: inline-flex;
-            padding: 12px 24px;
-            color: white;
-            margin: 5px;
-            position: relative;
-            cursor: pointer;
-        }
-        .box4 .hover-img {
-            display: none;
-            position: absolute;
-            bottom: -220px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 147px;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 8px;
-        }
-        .box4 p:hover .hover-img {
-            display: block;
-        }
-
-        /* 第五个Box */
-        .img-container {
-            position: relative;
-            display: inline-block;
-            margin: 0px;
-        }
-        .img-container img {
-            height: 200px;
-            border-radius: 8px;
-        }
-        .overlay-text {
-            display: none;
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0,0,0,0.7);
-            color: white;
-            padding: 10px;
-            border-radius: 8px;
-        }
-        .img-container:hover .overlay-text {
-            display: flex;
-            align-items: center;
-            justify-content: center;
         }
     </style>
 </head>
@@ -136,76 +73,6 @@
         <a href="https://umhome.github.io/pic001" target="_blank">...</a>
     </div>
 
-    <!-- 第四个Box 
-    <div class="box box4">
-        <p>一ノ瀬アメリ
-            <img src="https://spic.hotoss.com/dmm/mono/movie/adult/rbd291/rbd291ps.jpg" class="hover-img">
-        </p>
-        <p>丘咲エミリ
-            <img src="https://spic.hotoss.com/dmm/mono/movie/adult/ipz076/ipz076ps.jpg" class="hover-img">
-        </p>
-        <p>霧島レオナ
-            <img src="https://spic.hotoss.com/dmm/mono/movie/adult/n_1412rebd398/n_1412rebd398ps.jpg" class="hover-img">
-        </p>
-		<p>桃乃木かな
-            <img src="https://spic.hotoss.com/dmm/mono/movie/adult/tkipzz014/tkipzz014ps.jpg" class="hover-img">
-        </p>
-		<p>河北彩花
-            <img src="https://spic.hotoss.com/dmm/digital/video/sivr00326/sivr00326ps.jpg" class="hover-img">
-        </p>
-		<p>橋本ありな
-            <img src="https://spic.hotoss.com/dmm/mono/movie/adult/1fsdss376/1fsdss376ps.jpg" class="hover-img">
-        </p>
-		<p>大橋未久
-            <img src="https://spic.hotoss.com/dmm/mono/movie/adult/midd859/midd859ps.jpg" class="hover-img">
-        </p>
-		<p>桃谷エリカ
-            <img src="https://spic.hotoss.com/dmm/mono/movie/adult/n_650ecr0073/n_650ecr0073ps.jpg" class="hover-img">
-        </p>
-		<p>明里つむぎ
-            <img src="https://spic.hotoss.com/dmm/mono/movie/adult/meyd801/meyd801ps.jpg" class="hover-img">
-        </p>
-		<p>森沢かな
-            <img src="https://spic.hotoss.com/dmm/mono/movie/adult/h_346rebd912/h_346rebd912ps.jpg" class="hover-img">
-        </p>
-		<p>希崎ジェシカ
-            <img src="https://spic.hotoss.com/dmm/mono/movie/adult/ipz00740bod/ipz00740bodps.jpg" class="hover-img">
-        </p>
-		<p>希志あいの
-            <img src="https://spic.hotoss.com/dmm/mono/movie/adult/iptd971/iptd971ps.jpg" class="hover-img">
-        </p>
-		<p>小那海あや
-            <img src="https://spic.hotoss.com/dmm/digital/video/savr00383/savr00383ps.jpg" class="hover-img">
-        </p>
-		<p>羽月希
-            <img src="https://spic.hotoss.com/dmm/mono/movie/adult/h_067nass097dod/h_067nass097dodps.jpg" class="hover-img">
-        </p>
-		<p>冬愛ことね
-            <img src="https://spic.hotoss.com/dmm/mono/movie/adult/h_127ytr169/h_127ytr169ps.jpg" class="hover-img">
-        </p>
-		<p>野々浦暖
-            <img src="https://spic.hotoss.com/dmm/mono/movie/adult/118ppx027/118ppx027ps.jpg" class="hover-img">
-        </p>
-		<p>楪カレン
-            <img src="https://spic.hotoss.com/dmm/mono/movie/adult/pred739/pred739ps.jpg" class="hover-img">
-        </p>
-		<p>彩月七緒
-            <img src="https://spic.hotoss.com/mgs/images/sodcreate/107start/223/pf_o1_107start-223.jpg" class="hover-img">
-        </p>
-		<p>鷲尾めい
-            <img src="https://spic.hotoss.com/dmm/mono/movie/adult/tkssis529/tkssis529ps.jpg" class="hover-img">
-        </p>
-		<p>安齋らら
-            <img src="https://spic.hotoss.com/dmm/mono/movie/adult/ssis136/ssis136ps.jpg" class="hover-img">
-        </p>
-		<p>南乃そら
-            <img src="https://spic.hotoss.com/dmm/mono/movie/adult/bacj005so/bacj005sops.jpg" class="hover-img">
-        </p>
-		<p>神田るな
-            <img src="https://spic.hotoss.com/dmm/mono/movie/adult/xvsr163so/xvsr163sops.jpg" class="hover-img">
-        </p>
-    </div>
--->
     <!-- 第二个Box -->
     <div class="box box2">
         <p>1Pondo</p>
@@ -231,138 +98,5 @@
         <p>MXGS</p>
         <p>EKDV</p>
         </div>
-
-    <!-- 第五个Box 
-    <div class="box box5">
-        <div class="img-container">
-            <img src="https://spic.hotoss.com/dmm/mono/movie/adult/ipx934/ipx934pl.jpg">
-            <div class="overlay-text">IPX934</div>
-        </div>
-        <div class="img-container">
-            <img src="https://spic.hotoss.com/dmm/mono/movie/adult/ipzz178/ipzz178pl.jpg">
-            <div class="overlay-text">IPZZ178</div>
-        </div>
-		<div class="img-container">
-            <img src="https://spic.hotoss.com/dmm/mono/movie/adult/tkipzz293/tkipzz293pl.jpg">
-            <div class="overlay-text">IPZZ293</div>
-        </div>
-		<div class="img-container">
-            <img src="https://imagebf2d5647.dalicdn.com/censored/thumb/2020/SSNI/677/thumb.jpg">
-            <div class="overlay-text">SSNI677</div>
-        </div>
-		<div class="img-container">
-            <img src="https://spic.hotoss.com/dmm/mono/movie/adult/ssis667bod/ssis667bodpl.jpg">
-            <div class="overlay-text">SSIS667</div>
-        </div>
-		<div class="img-container">
-            <img src="https://xfhaoku.com/upload/vod/20230723-1/3d429182ec789e13c4f7ed02adad38ca.jpg">
-            <div class="overlay-text">Tokyo-Hot n0646</div>
-        </div>
-		<div class="img-container">
-            <img src="https://xfhaoku.com/upload/vod/20250321-1/bf0a286a24348fff0ea6ccb3a6cf88cb.jpg">
-            <div class="overlay-text">SSNI192</div>
-        </div>
-		<div class="img-container">
-            <img src="https://xfhaoku.com/upload/vod/20230120-1/819881f8d423c528c1867015a7eecf2a.jpg">
-            <div class="overlay-text">SDJS158</div>
-        </div>
-		<div class="img-container">
-            <img src="https://xfhaoku.com/upload/vod/20250318-1/ada4847d29ef9a17076038d605214e53.jpg">
-            <div class="overlay-text">SSNI514</div>
-        </div>
-		<div class="img-container">
-            <img src="https://xfhaoku.com/upload/vod/20250112-2/e1d0c84d318cce93cc6fde9276770b1e.jpg">
-            <div class="overlay-text">IPX372</div>
-        </div>
-		<div class="img-container">
-            <img src="https://imagebf2d5647.dalicdn.com/censored/thumb/2022/SSIS/529/thumb.jpg">
-            <div class="overlay-text">SSIS529</div>
-        </div>
-		<div class="img-container">
-            <img src="https://spic.hotoss.com/dmm/mono/movie/adult/k9ssis440/k9ssis440pl.jpg">
-            <div class="overlay-text">SSIS440</div>
-        </div>
-		<div class="img-container">
-            <img src="https://xfhaoku.com/upload/vod/20230927-1/8f803e8e624919698099e734a29263c9.jpg">
-            <div class="overlay-text">SSIS136</div>
-        </div>
-		<div class="img-container">
-            <img src="https://imagebf2d5647.dalicdn.com/censored/thumb/2022/BACJ/005/thumb.jpg">
-            <div class="overlay-text">BACJ005</div>
-        </div>
-		<div class="img-container">
-            <img src="https://xfhaoku.com/upload/vod/20221025-15/138a9a9a243ae7c99f52ffc9daae7f44.jpg">
-            <div class="overlay-text">CAWD259</div>
-        </div>
-		<div class="img-container">
-            <img src="https://imagebf2d5647.dalicdn.com/censored/thumb/2019/HODV/21402/thumb.jpg">
-            <div class="overlay-text">HODV21402</div>
-        </div>
-		<div class="img-container">
-            <img src="https://spic.hotoss.com/dmm/mono/movie/adult/9ssis560/9ssis560pl.jpg">
-            <div class="overlay-text">SSIS560</div>
-        </div>
-		<div class="img-container">
-            <img src="https://spic.hotoss.com/dmm/mono/movie/adult/tkipzz050/tkipzz050pl.jpg">
-            <div class="overlay-text">IPZZ050</div>
-        </div>
-		<div class="img-container">
-            <img src="https://imagebf2d5647.dalicdn.com/censored/thumb/2020/MILK/098/thumb.jpg">
-            <div class="overlay-text">MILK098</div>
-        </div>
-		<div class="img-container">
-            <img src="https://spic.hotoss.com/dmm/mono/movie/adult/9pred721/9pred721pl.jpg">
-            <div class="overlay-text">PRED721</div>
-        </div>
-		<div class="img-container">
-            <img src="https://www.sharkwowonline.com/uploads/banners/START-223.jpg">
-            <div class="overlay-text">START223</div>
-        </div>
-		<div class="img-container">
-            <img src="https://spic.hotoss.com/dmm/mono/movie/adult/h_254cand049/h_254cand049pl.jpg">
-            <div class="overlay-text">CAND049</div>
-        </div>
-		<div class="img-container">
-            <img src="https://spic.hotoss.com/dmm/mono/movie/adult/1fsdss828/1fsdss828pl.jpg">
-            <div class="overlay-text">FSDSS828</div>
-        </div>
-		<div class="img-container">
-            <img src="https://spic.hotoss.com/dmm/mono/movie/adult/hsoda029/hsoda029pl.jpg">
-            <div class="overlay-text">HSODA029</div>
-        </div>
-		<div class="img-container">
-            <img src="https://spic.hotoss.com/dmm/mono/movie/adult/ipx283/ipx283pl.jpg">
-            <div class="overlay-text">IPX283</div>
-        </div>
-		<div class="img-container">
-            <img src="https://spic.hotoss.com/dmm/mono/movie/adult/ipzz099/ipzz099pl.jpg">
-            <div class="overlay-text">IPZZ099</div>
-        </div>
-		<div class="img-container">
-            <img src="https://spic.hotoss.com/dmm/mono/movie/adult/h_1712kbr006/h_1712kbr006pl.jpg">
-            <div class="overlay-text">KBR006</div>
-        </div>
-		<div class="img-container">
-            <img src="https://spic.hotoss.com/dmm/digital/video/mdbk00331/mdbk00331pl.jpg">
-            <div class="overlay-text">MDBK331</div>
-        </div>
-		<div class="img-container">
-            <img src="https://spic.hotoss.com/dmm/mono/movie/adult/midd994/midd994pl.jpg">
-            <div class="overlay-text">MIDD994</div>
-        </div>
-		<div class="img-container">
-            <img src="https://imagebf2d5647.dalicdn.com/censored/thumb/2019/MYAB/005/thumb.jpg">
-            <div class="overlay-text">MYAB005</div>
-        </div>
-		<div class="img-container">
-            <img src="https://spic.hotoss.com/dmm/mono/movie/adult/royd177/royd177pl.jpg">
-            <div class="overlay-text">ROYD177</div>
-        </div>
-		<div class="img-container">
-            <img src="https://xfhaoku.com/upload/vod/20241118-1/7bc3325501e7dd735adf32c088248dfa.jpg">
-            <div class="overlay-text">KBI027</div>
-        </div>
-    </div>
-	-->
 </body>
 </html>
