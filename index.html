@@ -2,61 +2,76 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        body {
-		background-color: rgba(31,31,31,1.00);
-		height: 100vh;
-		margin: 0;
-		min-height: 100vh;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		background-position: 50% 50%;
-		background-repeat: no-repeat; 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-
-        .box {
-            width: 80%;
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
             justify-content: center;
-            gap: 10px;
+            min-height: 100vh;
+            background-color: #252525;
             padding: 20px;
         }
-
-        /* 第一个Box */
-        .box1 a {
-            display: inline-flex;
-            padding: 12px 24px;
-            background: rgba(0,0,0,0.6);
-            border-radius: 20px;
-            color: white;
-            text-decoration: none;
-            white-space: nowrap;
-            margin: 5px;
-            transition: 0.3s;
+        .container {
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
         }
-	.box1 a:hover {
-            background: #007bff;
-            transform: scale(1.05);
+        h1 {
+            color: #FFFFFF;
+            margin-bottom: 25px;
+        }
+        .link-box {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            width: 100%;
+        }
+        a {
+            display: block;
+            padding: 15px;
+            background-color: #000000;
+            color: #4285f4;
+            text-decoration: none;
+            border-radius: 8px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            font-size: 16px;
+        }
+        a:hover {
+            background-color: #4285f4;
+            color: white;
+            transform: translateY(-2px);
         }
     </style>
 </head>
 <body>
-    <div class="box box1">
-        <a href="http://958hsck.com/vodtype/2.html" target="_blank">黄色仓库</a>
-	<a href="http://cctv12306.com" target="_blank">备用</a>
-        <a href="https://www.55mm3.com" target="_blank">光棍影院</a>
-        <a href="https://cn.oupomov.cc" target="_blank">欧珀视频</a>
-        <a href="https://xfhaoku.com" target="_blank">新番号</a>
-        <a href="https://www.52lv.cc" target="_blank">麻豆视频</a>
-        <a href="https://www.aavindex.com/ja" target="_blank">JAV-Index</a>
-        <a href="https://avwikidb.com" target="_blank">AVwiki</a>
-        <a href="https://jav98.link" target="_blank">JAV98</a>
-        <a href="https://www.jphoo2025.top/?aId=22828" target="_blank">Jphoo</a>
-        <a href="https://www.bi90.com/mvshow/32-----------" target="_blank">写真</a>
-        <a href="https://www.iyuhuage.fun" target="_blank">雨花阁</a>
+    <div class="container">
+        <h1>视频在线播放</h1>
+        <div class="link-box">
+            <a href="http://958hsck.com/vodtype/2.html" target="_blank">黄色仓库</a>
+            <a href="http://cctv12306.com" target="_blank">黄色仓库(备用)</a>
+			<a href="https://cn.oupomov.cc" target="_blank">欧珀视频</a>
+            <a href="https://xfhaoku.com" target="_blank">新番号</a>
+			<a href="https://www.52lv.cc" target="_blank">麻豆视频</a>
+            <a href="https://www.55mm3.com" target="_blank">光棍影院</a>
+			<a href="https://www.bi90.com/mvshow/32-----------" target="_blank">写真视频</a>
+		<h1>番号封面预览</h1>
+			<a href="https://www.aavindex.com/ja" target="_blank">JAV-Index</a>
+			<a href="https://avwikidb.com" target="_blank">AVwiki</a>
+			<a href="https://jav98.link" target="_blank">JAV98</a>
+			<a href="https://www.jphoo2025.top/?aId=22828" target="_blank">Jphoo</a>
+			<h1>种子搜索</h1>
+			<a href="https://www.iyuhuage.fun" target="_blank">雨花阁</a>
+		
+        </div>
     </div>
 </body>
 </html>
