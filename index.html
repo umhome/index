@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -21,7 +22,7 @@
         }
         .container {
             width: 100%;
-            max-width: 400px;
+            max-width: 600px; /* 增加容器宽度 */
             text-align: center;
         }
         h1 {
@@ -30,12 +31,12 @@
         }
         .link-box {
             display: flex;
-            flex-direction: column;
+            flex-wrap: wrap; /* 允许换行 */
             gap: 12px;
             width: 100%;
         }
         a {
-            display: block;
+            flex: 1 1 calc(50% - 6px); /* 双列布局计算 */
             padding: 15px;
             background-color: #000000;
             color: #4285f4;
@@ -44,6 +45,7 @@
             box-shadow: 0 3px 6px rgba(0,0,0,0.1);
             transition: all 0.3s ease;
             font-size: 16px;
+            text-align: center; /* 文字居中 */
         }
         a:hover {
             background-color: #4285f4;
@@ -58,20 +60,22 @@
         <div class="link-box">
             <a href="http://958hsck.com/vodtype/2.html" target="_blank">黄色仓库</a>
             <a href="http://cctv12306.com" target="_blank">黄色仓库(备用)</a>
-			<a href="https://cn.oupomov.cc" target="_blank">欧珀视频</a>
+            <a href="https://cn.oupomov.cc" target="_blank">欧珀视频</a>
             <a href="https://xfhaoku.com" target="_blank">新番号</a>
-			<a href="https://www.52lv.cc" target="_blank">麻豆视频</a>
+            <a href="https://www.52lv.cc" target="_blank">麻豆视频</a>
             <a href="https://www.55mm3.com" target="_blank">光棍影院</a>
-			<a href="https://www.bi90.com/mvshow/32-----------" target="_blank">写真视频</a>
+		</div>
 		<h1>番号封面预览</h1>
-			<a href="https://www.aavindex.com/ja" target="_blank">JAV-Index</a>
+        <div class="link-box">
+            <a href="https://www.aavindex.com/ja" target="_blank">JAV-Index</a>
 			<a href="https://avwikidb.com" target="_blank">AVwiki</a>
 			<a href="https://jav98.link" target="_blank">JAV98</a>
 			<a href="https://www.jphoo2025.top/?aId=22828" target="_blank">Jphoo</a>
-			<h1>种子搜索</h1>
-			<a href="https://www.iyuhuage.fun" target="_blank">雨花阁</a>
-		
-        </div>
+		</div>
+		<h1>种子搜索</h1>
+        <div class="link-box">
+            <a href="https://www.iyuhuage.fun" target="_blank">雨花阁</a>
+		</div>
     </div>
 </body>
 </html>
